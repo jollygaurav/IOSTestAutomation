@@ -6,6 +6,7 @@ import io.appium.java_client.MobileDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class Login {
@@ -14,7 +15,8 @@ public class Login {
     DriverInitiator driverInitiator;
     LoginPage loginPageObject;
 
-    public Login(){
+    @BeforeSuite
+    public void driverInit(){
         driverInitiator = new DriverInitiator();
         this.driver= driverInitiator.createDriver();
         loginPageObject=new LoginPage(driver);
@@ -28,7 +30,7 @@ public class Login {
 
     @AfterSuite
     public void uninstallApp() {
-        driver.removeApp("com.bzytan.appiumeveryday");
+        driver.closeApp();
     }
 
 }

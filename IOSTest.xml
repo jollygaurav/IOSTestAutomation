@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="IOS Test">
+    <test name="IOS_Test_Automation" preserve-order="true">
+        <classes>
+            <class name="TestClasses.Login">
+                <methods>
+                    <include name="openApp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
