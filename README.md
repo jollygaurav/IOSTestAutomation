@@ -4,9 +4,7 @@ Software's to be installed -
 <ul>
   <li> Homebrew -> 
     
-    ```
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
-    ```
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"   
    
    [Install xcode first (point - 5) if there are errors in installing homebrew]
    </li> 
