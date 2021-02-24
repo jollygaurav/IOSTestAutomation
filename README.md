@@ -2,7 +2,11 @@
 
 Software's to be installed - 
 <ul>
-  <li> Homebrew -> <i>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</i>   [Install xcode first (point - 5) if there are errors in installing homebrew]</li> 
+  <li> Homebrew -> 
+    ```
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
+    ```
+    [Install xcode first (point - 5) if there are errors in installing homebrew]</li> 
   <li>Carthage -> <i>brew install carthage</i></li>
   <li>Node and NPM -> <i>brew install node</i></li>
   <li>JDK(Download from here) -> <i>https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html</i></li>
